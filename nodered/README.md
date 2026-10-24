@@ -114,6 +114,18 @@ LibreNMS API → Node-RED → MQTT Broker (Aedes) → 3D Platform (ทีมอ�
 
 ---
 
+## 🔑 ใส่ Credentials หลังเปิด Node-RED ครั้งแรก
+
+repo นี้ **ไม่เก็บ** `flows_cred.json` และ `.config.runtime.json` (Node-RED สร้างไฟล์เหล่านี้ให้เองตอนเริ่มทำงาน)
+หลัง `docker compose up -d` และ import flow แล้ว ให้ใส่ค่าของเครื่องตัวเอง:
+
+1. ดับเบิลคลิก node **http request** ที่เรียก LibreNMS API → ใส่ API token ของ LibreNMS ที่สร้างใน Lab 4
+2. ดับเบิลคลิก config node **mqtt-broker** → ใส่ username/password ถ้า broker ของคุณเปิด auth
+3. กด **Deploy**
+
+> ห้าม commit `nodered_data/flows_cred.json` หรือ `nodered_data/.config.runtime.json` คู่กัน
+> เพราะไฟล์หลังมี `_credentialSecret` ที่ใช้ถอดรหัสไฟล์แรกได้
+
 ## 🔒 Security Setup (สำหรับ Production)
 
 > ⚠️ **สำคัญ:** Configuration ที่อยู่ใน `docker-compose.yml` ออกแบบมาสำหรับ Workshop/การเรียนรู้เท่านั้น

@@ -42,3 +42,9 @@ librenms/.env
 nodered/nodered_data/node_modules/
 nodered/nodered_data/.npm/
 nodered/.env
+
+# Node-RED secrets (regenerated at runtime; never commit together)
+nodered/nodered_data/flows_cred.json
+nodered/nodered_data/.flows_cred.json.backup
+nodered/nodered_data/.config.runtime.json
+nodered/nodered_data/.config.runtime.json.backup
