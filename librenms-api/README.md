@@ -84,7 +84,7 @@ API Token จำเป็นสำหรับการ authenticate กับ L
 
 ```
 Your API Token:
-a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
+YOUR_TOKEN
 ```
 
 **💾 เก็บ token ไว้ในที่ปลอดภัย** - คุณจะไม่สามารถดูได้อีก!
@@ -93,11 +93,11 @@ a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
 
 ```bash
 # Linux/macOS
-curl -H "X-Auth-Token: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" \
+curl -H "X-Auth-Token: YOUR_TOKEN" \
   http://localhost:8000/api/v0/devices
 
 # Windows PowerShell
-curl.exe -H "X-Auth-Token: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" http://localhost:8000/api/v0/devices
+curl.exe -H "X-Auth-Token: YOUR_TOKEN" http://localhost:8000/api/v0/devices
 ```
 
 **Expected Response:**
@@ -128,7 +128,7 @@ docker exec librenms lnms user:api-token admin create "My API Token"
 **Output:**
 ```
 API Token created successfully:
-Token: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
+Token: YOUR_TOKEN
 ```
 
 ### จัดการ API Tokens

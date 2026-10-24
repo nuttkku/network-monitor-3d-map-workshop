@@ -617,7 +617,7 @@ DEVICE_IP=192.168.56.10
 7. **Copy token และเก็บไว้!** (จะแสดงครั้งเดียว)
 
 ```
-Token: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
+Token: YOUR_TOKEN
 ```
 
 ### Step 4.3: บันทึก API Token ลงใน .env File
@@ -635,7 +635,7 @@ nano .env
 API_TOKEN=your-api-token-here
 
 # After (ใส่ token ที่ได้จาก LibreNMS)
-API_TOKEN=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
+API_TOKEN=YOUR_TOKEN
 ```
 
 บันทึกไฟล์ แล้วตรวจสอบ:
